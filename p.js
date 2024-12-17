@@ -5,9 +5,16 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', function (e) {
         e.preventDefault();
 
+        const consentCheckbox = form.querySelector('input[name="consent"]');
+        if (!consentCheckbox.checked) {
+            responseDiv.textContent = 'Вы должны согласиться на обработку персональных данных!';
+            responseDiv.style.color = 'red';
+            return;
+        }
+
         const formData = new FormData(form);
 
-        fetch('https://example.com/submit', {  // Укажите URL сервиса
+        fetch('https://example.com/submit', {
             method: 'POST',
             body: formData
         })
