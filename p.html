@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Шапка с видеофоном -->
     <header>
         <video autoplay muted loop class="bg-video">
             <source src="video.mp4" type="video/mp4">
@@ -20,9 +19,7 @@
         </div>
     </header>
 
-    <!-- Основной контент -->
     <main>
-        <!-- Секции услуг -->
         <section class="services">
             <h2>Наши услуги</h2>
             <div class="service-list">
@@ -33,7 +30,6 @@
             </div>
         </section>
 
-        <!-- Секция Тарифов -->
         <section class="pricing">
             <h2>Тарифы</h2>
             <div class="pricing-container">
@@ -55,7 +51,6 @@
             </div>
         </section>
 
-        <!-- Команда -->
         <section class="team">
             <h2>Наша команда</h2>
             <div class="team-members">
@@ -77,7 +72,6 @@
             </div>
         </section>
 
-        <!-- Последние кейсы -->
         <section class="cases">
             <h2>Последние кейсы</h2>
             <div class="cases-container">
@@ -104,7 +98,6 @@
             </div>
         </section>
 
-        <!-- Отзывы, Пока что один, а не несколько, нужно доделать-->
         <section class="reviews">
             <h2>Отзывы</h2>
             <blockquote>
@@ -112,8 +105,7 @@
                 <cite>Иван Петров, клиент</cite>
             </blockquote>
         </section>
-        <!-- Нет секции "С нами работают"-->
-        <!-- FAQ , Пока что только один вопрос-ответ, который не обведен красным. Нужно доделать-->
+
         <section class="faq">
             <h2>FAQ</h2>
             <div class="faq-item">
@@ -122,7 +114,6 @@
             </div>
         </section>
 
-         <!-- Форма заявки, она посередине, без фона и чекбокса с соглашением на отправку персональных данных, нужно доделать  -->
         <section id="form" class="form-section">
             <div class="form-container">
                 <h2>Оставить заявку</h2>
@@ -137,15 +128,29 @@
                         <textarea name="message" placeholder="Сообщение" rows="4"></textarea>
                     </div>
                     <div class="form-row">
+                        <label>
+                            <input type="checkbox" name="consent" required>
+                            Согласен на обработку персональных данных
+                        </label>
+                    </div>
+                    <div class="form-row">
                         <button type="submit">Отправить</button>
                     </div>
                 </form>
                 <div id="response"></div>
             </div>
         </section>
-        <!-- Нужно добавить ссылки на соц-сети и описание внизу -->
-    </main>
 
+        <section class="social-media">
+            <h2>С нами работают</h2>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </section>
+
+    </main>
 
     <script src="p.js"></script>
 </body>
